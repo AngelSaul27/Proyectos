@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/img/App/Logo_small.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/components/app.css">
+    <link rel="stylesheet" href="./assets/css/pages/aspirante/app.css">
+    <title>Astro</title>
+</head>
+
+<body>
+    <header class="flex-col" id="Header_Id">
+        <div class="header_main flex">
+            <div class="header_main-brand flex gap-20">
+                <!-- Logo -->
+                <div class="flex gap-20" style="align-items: center;">
+                    <div class="header_main-logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/App/Logo_small.png" alt="Logotipo Astro">
+                        </a>
+                    </div>
+                    <nav class="header_logo_filter" style="background-color: #021b2b;">
+                        <ul class="flex gap-20">
+                            <li>
+                                <a href="">Perfiles de Empresas </a>
+                            </li>
+                            <li>
+                                <a href="">Ofertas Mas buscadas</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Accesos rapidos -->
+                <nav class="header_main_filters" style="display: none;">
+                    <ul class="flex gap-20">
+                        <li>
+                            <a href="#">Perfiles de empresas</a>
+                        </li>
+                        <li>
+                            <a href="#">Ofertas más buscadas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Session Nav -->
+            <div class="header_togglet">
+                <div id="DropdownMenu" data-dropdown="ToggleMenuNav" class="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="svg-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+                <div id="ToggleMenuNav" class="dropdown-content dropdown-right">
+                    <a href="#"><small> Perfil </small></a>
+                    <a href="./index.html"><small> Exit </small></a>
+                </div>
+            </div>
+        </div>
+        <nav class="header_main_footer" id="header_footer">
+            <ul class="flex gap-20">
+                <li>
+                    <a class="flex" style="gap: 5px" href="./aspirante_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>
+                            Panel Inicial
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./aspirante_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <span>
+                            Buscar
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./aspirante_profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>
+                        <span>
+                            Currículo
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./aspirante_postulacion_listados.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                        </svg>
+                        <span>
+                            Postulaciones
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./aspirante_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                        <span>Notificaciones</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="breadcrumb">
+            <ol class="breadcrumb_box">
+                <li>
+                    <a class="breadcrumb_box_home active" href="./aspirante_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="breadcrumb_row">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="svg-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </li>
+                <li class="breadcrumb_page">
+                    <span>Mis datos</span>
+                </li>
+            </ol>
+        </div>
+
+        <section class="PfContainer flex gap-20">
+            <div class="PfPersonales">
+                <div class="PfPersonales_avatar flex-col">
+                    <div class="PfPersonales_avatar-box">
+                        <label for="FileProfie" style="margin: 0px;" class="relative eventHover">
+                            <img class="" src="./assets/img/Storage/Avatars/empleado_avatar.png" alt="burgerking logo">
+                            <input type="file" class="hidden" id="FileProfie">
+                            <div class="reloadOpacity opacity-0 absolute overflow_avatar">
+            
+                            </div>
+                        </label>
+                    </div>
+                    <div class="PfPersonales_avatar-nombre flex-col">
+                        <span>!Hola¡</span>
+                        <span>Angel Saul Pascual C.</span>
+                    </div>
+                    <p class="PfPersonales_avatar-bio">
+                        <small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio repudiandae incidunt iste voluptates quo, laboriosam ex.</small>
+                    </p>
+                    <hr>
+                    <div class="PfPersonales_avatar-status flex gap-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon" color="#378371">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+                        <small>Tu cuenta esta verificada</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="PfDatos flex gap-20">
+                <div class="PfDatos_Aspirante flex-col gap-10">
+                    <h1>Datos Personales</h1>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Nombre</label>
+                            <input type="text" placeholder="Angel Saul">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Apellido P.</label>
+                            <input type="text" placeholder="Pascual">
+                        </div>
+                        <div>
+                            <label for="">Apellido M.</label>
+                            <input type="text" placeholder="Camacho">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Fecha de Nacimiento</label>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <label for="">Genero</label>
+                            <div class="input-group">
+                                <div class="flex" style="align-items: center;">
+                                    <input type="radio" style="height: min-content">
+                                    <label for="">Masc.</label>
+                                </div>
+                                <div class="flex" style="align-items: center;">
+                                    <input type="radio" style="height: min-content">
+                                    <label for="">Fem.</label>
+                                </div>
+                                <div class="flex" style="align-items: center;">
+                                    <input type="radio" style="height: min-content">
+                                    <label for="">Otro</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Telefono</label>
+                            <input type="number" placeholder="Telefono movil (10 caracteres)">
+                        </div>
+                        <div style="width: 40%">
+                            <label for="">Extension</label>
+                            <input type="number" placeholder="+">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Pais</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Estados</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Ciudad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Municipio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Calles</label>
+                        <input type="text" placeholder="Calle">
+                    </div>
+                    <div>
+                        <label for="">Referencias</label>
+                        <input type="text" placeholder="Entre que calles">
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Num. Ext.</label>
+                            <input type="text" placeholder="#">
+                        </div>
+                        <div>
+                            <label for="">Num. Int.</label>
+                            <input type="text" placeholder="#">
+                        </div>
+                        <div>
+                            <label for="">Código Postal</label>
+                            <select>
+                                <option value="null" class="hidden">CP</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Información extra</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Bio" style="resize: none;"></textarea>
+                    </div>
+                </div>
+                <div class="PfDatos_Escolares flex-col gap-10">
+                    <h1>Datos Escolares</h1>
+                    <div>
+                        <label for="">Nivel Academico</label>
+                        <select>
+                            <option value="null" class="hidden">Seleccion tu nivel</option>
+                            <option value="">Licenciatura</option>
+                            <option value="">Ingenieria</option>
+                            <option value="">Tecnico</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Ultimo Lugar de Estudio</label>
+                            <input type="text" placeholder="ITVH - Instituto Tecnologico de villahermosa">
+                        </div>
+                        <div>
+                            <label for="">Titulo o Carrera</label>
+                            <input type="text" placeholder="Sistemas computacionales">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Fecha de Entrada</label>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <label for="">Fecha de Salida</label>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <h1>Datos para la profesión</h1>
+                    <small>Es lo más importante para las empresas.</small>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Puesto de Interes</label>
+                            <select>
+                                <option value="null" class="hidden">Selecciona una area</option>
+                                <option value="Programador">Programador</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Salario a esperar aprox.</label>
+                            <input type="number" placeholder="MX$">
+                        </div> 
+                    </div>
+                    <div>
+                        <label for="">Información extra</label>
+                        <textarea name="" id="" cols="30" rows="10" style="resize: none;" placeholder="Actividades, experiencias laborales o logros"></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button class="btn-green btn-green-shadow">Actualizar</button>
+                        <button class="btn-red btn-red-shadow">Eliminar Cuenta</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p class="footer_title">Candidatos</p>
+                <a>Crea un CV</a>
+                <a>Iniciar sesión</a>
+                <a href="">Perfiles Laborales</a>
+                <a href="">Perfiles de Empresa</a>
+                <a href="">Preguntas frecuentes candidatos</a>
+            </div>
+            <div>
+                <p class="footer_title">Empleos por clasificación</p>
+                <a href="">Vacantes por Estado</a>
+                <a href="">Vacantes por Ciudad</a>
+                <a href="">Vacantes por Categoría</a>
+                <a href="">Vacantes más buscadas</a>
+                <a href="">Vacantes por Empresa</a>
+            </div>
+            <div>
+                <p class="footer_title">Empresas</p>
+                <a href="">Busco talento / Publicar Anuncio</a>
+                <a href="">Ayuda para reclutadores</a>
+                <a href="">Preguntas frecuentes de reclutadores</a>
+            </div>
+            <div>
+                <p class="footer_title">Titulo</p>
+                <a href="" style="color: #ff9934">Ayuda</a>
+                <a href="">Blog</a>
+            </div>
+        </div>
+        <div class="footer_copyright">Astro Bolsa de Trabajo © 2022 Derechos reservados. </d>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

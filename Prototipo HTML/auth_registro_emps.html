@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/img/App/Logo_small.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/pages/auth/auth.css">
+    <link rel="stylesheet" href="./assets/css/components/app.css">
+    <title>Astro</title>
+</head>
+
+<body>
+
+    <main class="MainLog flex">
+        <div class="MainLog_desing">
+            <div class="MainLog_desing-header">
+                <a href="./index.html">
+                    <img class="MainLog_desing-logo" src="./assets/img/App/Logo_small.png" alt="Logotipo Astro Login">
+                </a>
+                <h1>Encuentra los mejores aspirantes para tu empresa en <span style="font-weight: 500; color: rgb(255, 181, 121)">Astro</span>
+                </h1>
+            </div>
+            <img class="MainLog_desing-ilustracion" src="./assets/svg/undraw_career_progress.svg" alt="" width="80%">
+        </div>
+        <div class="MainLog_form">
+            <div class="breadcrumb">
+                <ol class="breadcrumb_box">
+                    <li>
+                        <a class="breadcrumb_box_home active" href="./index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="svg-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb_row">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a class="breadcrumb_box_home active" href="./auth_registro.html">
+                            <span>Registro</span>
+                        </a>
+                    </li>
+                    <li class="breadcrumb_row">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </li>
+                    <li class="breadcrumb_page">
+                        <span>Empleador</span>
+                    </li>
+                </ol>
+            </div>
+            <div class="MainLog_Form-head">
+                <h1>Crea una cuenta</h1>
+                <span>Por favor completa todos los campos.</span>
+            </div>
+            <form action="">
+                <div class="MainRegistro">
+                    <div id="Step1" data-step="true">
+                        <span class="MainRegistro_Steps">Paso 1 de 4</span>
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Nombre">
+                        <div class="input-group">
+                            <div class="flex-col">
+                                <label for="">Correo electronico</label>
+                                <input type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="flex-col">
+                                <label for="">Comfirmar correo electronico</label>
+                                <input type="email" placeholder="example@gmail.com">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div class="flex-col">
+                                <label for="">Contraseña</label>
+                                <input type="password" placeholder="**********">
+                            </div>
+                            <div class="flex-col">
+                                <label for="">Comfirmar contraseña</label>
+                                <input type="password" placeholder="**********">
+                            </div>
+                        </div>
+                        <div class="btn-green btn-green-shadow max-content btn-registro btn_next_step">Continuar</div>
+                    </div>
+                    <div id="Step2" class="hidden" data-step="true">
+                        <span class="MainRegistro_Steps">Paso 2 de 4</span>
+
+                        <div class="input-group">
+                            <div>
+                                <label for="">Tipo de Empresa</label>
+                                <select>
+                                    <option value="null" class="hidden">Selecciona su tipo de empresa</option>
+                                    <option value="">ASD</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Sector de Actividad</label>
+                                <select>
+                                    <option value="null" class="hidden">Selecciona su sector de actividad</option>
+                                    <option value="">ASD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div>
+                                <label for="">Actividad Economica Principal</label>
+                                <select>
+                                    <option value="null" class="hidden">Selecciona su actividad economica</option>
+                                    <option value="">ASD</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Subsector</label>
+                                <select>
+                                    <option value="null" class="hidden">Sector de actividades</option>
+                                    <option value="">ASD</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <div>
+                                <label for="">Razón Social</label>
+                                <input type="text" placeholder="Razón Social">
+                            </div>
+                            <div>
+                                <label for="">RFC</label>
+                                <input type="text" placeholder="RFC (13 caracteres)">
+                            </div>
+                        </div>
+
+                        <div class="btn-green btn-green-shadow max-content btn-registro btn_next_step">Continuar</div>
+                    </div>
+                    <div id="Step3" class="hidden" data-step="true">
+                        <span class="MainRegistro_Steps">Paso 3 de 4</span>
+
+                        <div class="input-group">
+                            <div>
+                                <label for="">Código Postal</label>
+                                <input type="text" placeholder="CP">
+                            </div>
+                            <div>
+                                <label for="">Estado</label>
+                                <select>
+                                    <option value="null" class="hidden">Seleccione su Estado</option>
+                                    <option value="">Tabasco</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Municipio</label>
+                                <select>
+                                    <option value="null" class="hidden">Seleccione su Municipio</option>
+                                    <option value="">Centro</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div>
+                                <label for="">Colonia</label>
+                                <select>
+                                    <option value="null" class="hidden">Seleccione su Colonia</option>
+                                    <option value="">Gaviotas</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="">Calle</label>
+                                <input type="text" placeholder="Ingrese la dirección exacta">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <div>
+                                <label for="">Numero Exterior</label>
+                                <input type="text" placeholder="Num. Ext.">
+                            </div>
+                            <div>
+                                <label for="">Numero Interior</label>
+                                <input type="text" placeholder="Num. Int.">
+                            </div>
+                            <div>
+                                <label for="">Referencias</label>
+                                <input type="text" placeholder="Entre que calles">
+                            </div>
+                        </div>
+
+                        <div class="btn-green btn-green-shadow max-content btn-registro btn_next_step">Continuar</div>
+                    </div>
+                    <div id="Step4" class="hidden" data-step="true">
+                        <span class="MainRegistro_Steps">Paso 4 de 4</span>
+                        <label for="">Descripción de la Empresa</label>
+                        <textarea cols="30" rows="8" style="resize: none" placeholder="Descripción"></textarea>
+                        <div class="MainRegistro_Steps-input_foto">
+                            <label for="Fotografia_Input" class="flex-col">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                                </svg>
+                                <span><Small>CLIC PARA SUBIR UN ARCHIVO</Small></span>
+                                <small>Solo: Jpg,Jpeg Max: 5mb</small>
+                                <input type="file" class="hidden" id="Fotografia_Input">
+                            </label>
+                        </div>
+                        <p><small>Al crear tu cuenta aceptas los <a href="#">terminos</a> y <a href="#">condiciones</a>.</small></p>
+                        <button type="submit" class="btn-green btn-green-shadow max-content btn-registro">Crearcuenta</button>
+                        <a href="./empleador_index.html">BOTON TEMPORAL - INGRESA AQUÍ</a>
+                    </div>
+                </div>
+            </form>
+            <small id="Btn_redirect">¿Ya tienes una cuenta? <a href="./auth_login.html">Ingresa aquí</a></small>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./assets/js/auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="./assets/img/App/Logo_small.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/components/app.css">
+    <link rel="stylesheet" href="./assets/css/pages/empleador/app.css">
+    <title>Astro</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="flex-col" id="Header_Id">
+        <div class="header_main flex">
+            <div class="header_main-brand flex gap-20">
+                <!-- Logo -->
+                <div class="flex gap-20" style="align-items: center;">
+                    <div class="header_main-logo">
+                        <a href="./index.html">
+                            <img src="./assets/img/App/Logo_small.png" alt="Logotipo Astro">
+                        </a>
+                    </div>
+                    <nav class="header_logo_filter" style="background-color: #021b2b;">
+                        <ul class="flex gap-20">
+                            <li>
+                                <a href="">Perfiles de Empresas </a>
+                            </li>
+                            <li>
+                                <a href="">Ofertas Mas buscadas</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- Accesos rapidos -->
+                <nav class="header_main_filters" style="display: none;">
+                    <ul class="flex gap-20">
+                        <li>
+                            <a href="#">Perfiles de empresas</a>
+                        </li>
+                        <li>
+                            <a href="#">Ofertas más buscadas</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Session Nav -->
+            <div class="nav_empleador flex gap-20">
+                <a href="./empleador_cear_oferta.html" class="btn_Created_ofert">
+                    Crear Ofertas
+                </a>
+                <div class="geader_togglet">
+                    <div id="DropdownMenu" data-dropdown="ToggleMenuNav" class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+                    <div id="ToggleMenuNav" class="dropdown-content dropdown-right">
+                        <a href="#"><small> Perfil </small></a>
+                        <a href="./index.html"><small> Exit </small></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="header_main_footer" id="header_footer">
+            <ul class="flex gap-20">
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>
+                            Panel Inicial
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_profile.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" />
+                        </svg>
+                        <span>
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_post_listado.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.875 14.25l1.214 1.942a2.25 2.25 0 001.908 1.058h2.006c.776 0 1.497-.4 1.908-1.058l1.214-1.942M2.41 9h4.636a2.25 2.25 0 011.872 1.002l.164.246a2.25 2.25 0 001.872 1.002h2.092a2.25 2.25 0 001.872-1.002l.164-.246A2.25 2.25 0 0116.954 9h4.636M2.41 9a2.25 2.25 0 00-.16.832V12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 12V9.832c0-.287-.055-.57-.16-.832M2.41 9a2.25 2.25 0 01.382-.632l3.285-3.832a2.25 2.25 0 011.708-.786h8.43c.657 0 1.281.287 1.709.786l3.284 3.832c.163.19.291.404.382.632M4.5 20.25h15A2.25 2.25 0 0021.75 18v-2.625c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125V18a2.25 2.25 0 002.25 2.25z" />
+                        </svg>
+                        <span>
+                            Mis Publicaciones
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_solicitudes_listado.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0118 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3l1.5 1.5 3-3.75" />
+                        </svg>
+                        <span>
+                            Solicitudes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_estadisticas.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                        </svg>
+                        <span>
+                            Estadisticas
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_aspirantes_listado.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <span>
+                            Buscar Aspirantes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex" style="gap: 5px" href="./empleador_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                        <span>Notificaciones</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        
+        <div class="breadcrumb">
+            <ol class="breadcrumb_box">
+                <li>
+                    <a class="breadcrumb_box_home active" href="./empleador_index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg-icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="breadcrumb_row">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="svg-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </li>
+                <li class="breadcrumb_page">
+                    <span>Mis datos</span>
+                </li>
+            </ol>
+        </div>
+
+        <section class="PfContainer flex gap-20">
+            <div class="PfPersonales">
+                <div class="PfPersonales_avatar flex-col">
+                    <div class="PfPersonales_avatar-box">
+                        <label for="FileProfie" style="margin: 0px;" class="relative eventHover">
+                            <img class="" src="./assets/img/Storage/LogosEmpresas/burgerking.png" alt="burgerking logo">
+                            <input type="file" class="hidden" id="FileProfie">
+                            <div class="reloadOpacity opacity-0 absolute overflow_avatar">
+                                
+                            </div>
+                        </label>
+                    </div>
+                    <div class="PfPersonales_avatar-nombre flex-col">
+                        <span>!Hola¡</span>
+                        <span>Burger King</span>
+                    </div>
+                    <hr>
+                    <div class="PfPersonales_avatar-status flex gap-10">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            class="svg-icon" color="#378371">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                        </svg>
+                        <small>Tu cuenta esta verificada</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="PfDatos flex gap-20">
+                <div class="PfDatos_Empresa flex-col gap-10">
+                    <h1>Datos de la Empresa</h1>
+                    <div class="PfDatos_Empresa-form">
+                        <label for="">Nombre</label>
+                        <input type="text" placeholder="Burger King">
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Razón Social</label>
+                            <input type="text" placeholder="Razon Social">
+                        </div>
+                        <div>
+                            <label for="">RFC (13 caracteres)</label>
+                            <input type="text" placeholder="RFC">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Tipo de Empresa</label>
+                            <select>
+                                <option value="null" class="hidden">Tipo de Empresa</option>
+                                <option value="Comida Rapida" selected>Asociación</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Actividad Economica</label>
+                            <select>
+                                <option value="null" class="hidden">Actividad economica</option>
+                                <option value="Comida Rapida" selected>Comida rapida</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Sector Economico</label>
+                            <select>
+                                <option value="null" class="hidden">Sector economico</option>
+                                <option value="Comida" selected>Franquisias</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">SubSector</label>
+                            <select>
+                                <option value="null" class="hidden">SubSector</option>
+                                <option value="Comida" selected>SubSector</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Descripción</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Bio" style="resize: none;"></textarea>
+                    </div>
+                </div>
+                <div class="PfDatos_Adress flex-col gap-10">
+                    <h1>Ubicación</h1>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Pais</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Estados</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Ciudad</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Dirección</label>
+                            <select>
+                                <option value="null" class="hidden">Municipio</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Calles</label>
+                        <input type="text" placeholder="Calle">
+                    </div>
+                    <div>
+                        <label for="">Referencias</label>
+                        <input type="text" placeholder="Entre que calles">
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Num. Ext.</label>
+                            <input type="text" placeholder="#">
+                        </div>
+                        <div>
+                            <label for="">Num. Int.</label>
+                            <input type="text" placeholder="#">
+                        </div>
+                        <div>
+                            <label for="">Código Postal</label>
+                            <select>
+                                <option value="null" class="hidden">CP</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <button class="btn-green btn-green-shadow">Actualizar</button>
+                        <button class="btn-red btn-red-shadow">Eliminar Cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p class="footer_title">Candidatos</p>
+                <a>Crea un CV</a>
+                <a>Iniciar sesión</a>
+                <a href="">Perfiles Laborales</a>
+                <a href="">Perfiles de Empresa</a>
+                <a href="">Preguntas frecuentes candidatos</a>
+            </div>
+            <div>
+                <p class="footer_title">Empleos por clasificación</p>
+                <a href="">Vacantes por Estado</a>
+                <a href="">Vacantes por Ciudad</a>
+                <a href="">Vacantes por Categoría</a>
+                <a href="">Vacantes más buscadas</a>
+                <a href="">Vacantes por Empresa</a>
+            </div>
+            <div>
+                <p class="footer_title">Empresas</p>
+                <a href="">Busco talento / Publicar Anuncio</a>
+                <a href="">Ayuda para reclutadores</a>
+                <a href="">Preguntas frecuentes de reclutadores</a>
+            </div>
+            <div>
+                <p class="footer_title">Titulo</p>
+                <a href="" style="color: #ff9934">Ayuda</a>
+                <a href="">Blog</a>
+            </div>
+        </div>
+        <div class="footer_copyright">Astro Bolsa de Trabajo © 2022 Derechos reservados. </d>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
