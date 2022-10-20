@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./assets/img/SkillUp.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/layouts/app.css">
+    <link rel="stylesheet" href="./assets/css/empleado/perfil.css">
+    <title>Skill-Up</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="header_logo-img">
+                <a href="./index.html">
+                    <img src="./assets/img/SkillUp.png" alt="logotipo" width="30px">
+                </a>
+            </div>
+            <div class="header_logo-title">
+                <h2>Skill-Up</h2>
+                <small>Capacitate</small>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <ul class="flex gap-20">
+                <li>
+                    <a href="./index.html" style="align-items: center; display: flex; gap: 5px">
+                        <span>Salir</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="SubMenu">
+        <ul class="flex gap-20">
+            <li>
+                <a href="./empleado_idx.html">Panel Principal</a>
+            </li>
+            <li>
+                <a href="./empleado_perfil.html">Perfil</a>
+            </li>
+            <li>
+                <a href="./empleado_cursos_listado.html">Mis Cursos</a>
+            </li>
+            <li>
+                <a href="./empleado_certificados_listado.html">Mis Certificados</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="">
+            <div class="flex-col aling-center avatar_input">
+                <label for="file_avatar">
+                    <img src="./assets/img/sistema/avatars/avatar.png" alt="" width="100px">
+                    <input type="file" name="avatar" class="hidden" id="file_avatar">
+                </label>
+                <small>Click para actualizar</small>
+            </div>
+    
+            <div class="formulario_container flex gap-20">
+                <div class="formulario_left flex-col gap-10">
+                    <h1>Datos Empresa</h1>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Nombre(s)</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <label for="">Apellido M.</label>
+                            <input type="text" placeholder="Apellido M.">
+                        </div>
+                        <div>
+                            <label for="">Apellido P.</label>
+                            <input type="text" placeholder="Apellido P.">
+                        </div>
+                    </div>
+                    
+                    <div class="input-group">
+                        <div class="flex-col">
+                            <label for="">Correo electronico</label>
+                            <input type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="flex-col">
+                            <label for="">Contraseña</label>
+                            <input type="password" placeholder="**********">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <div>
+                            <label for="">Fecha de Nacimiento</label>
+                            <input type="date">
+                        </div>
+                        <div>
+                            <label for="">Numero</label>
+                            <input type="number">
+                        </div>
+                        <div>
+                            <label for="">Extension</label>
+                            <input type="number">
+                        </div>
+                    </div>
+
+                    <div class="flex gap-20">
+                        <button class="btn-save">Actualizar</button>
+                        <button class="btn-danger">Eliminar Cuenta</button>
+                    </div>
+                </div>
+                <div class="formulario_left flex-col gap-10">
+                    <h1>Dirección</h1>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Código Postal</label>
+                            <input type="text" placeholder="CP">
+                        </div>
+                        <div>
+                            <label for="">Estado</label>
+                            <select>
+                                <option value="null" class="hidden">Seleccione su Estado</option>
+                                <option value="">Tabasco</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Municipio</label>
+                            <select>
+                                <option value="null" class="hidden">Seleccione su Municipio</option>
+                                <option value="">Centro</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Colonia</label>
+                            <select>
+                                <option value="null" class="hidden">Seleccione su Colonia</option>
+                                <option value="">Gaviotas</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="">Calle</label>
+                            <input type="text" placeholder="Ingrese la dirección exacta">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <div>
+                            <label for="">Numero Exterior</label>
+                            <input type="text" placeholder="Num. Ext.">
+                        </div>
+                        <div>
+                            <label for="">Numero Interior</label>
+                            <input type="text" placeholder="Num. Int.">
+                        </div>
+                        <div>
+                            <label for="">Referencias</label>
+                            <input type="text" placeholder="Entre que calles">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p class="footer_title">Empresas</p>
+                <a>Crea un curso</a>
+                <a>Iniciar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+            </div>
+            <div>
+                <p class="footer_title">Empleados</p>
+                <a href="">Cursos</a>
+                <a href="">Inisiar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Registro</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur consectetur elit.</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="" style="color: #A3BF3E">Ayuda</a>
+                <a href="">Lorem ipsum</a>
+            </div>
+        </div>
+        <div class="footer_copyright">Skill-Up © 2022. </d>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+:root{
+    --purple: #9E49EB;
+    --purple-100: #774CF5;
+    --azul: #5052DE;
+    --azul-100: #4C7BF5;
+    --azul-200: #49A1EB;
+    --azul-300: #0B2F63;
+    --marino: #393B9E;
+    --marino-100: #22235E;
+    --marino-200: #5052DE;
+    --marino-300: #5457EB;
+    --marino-400: #4749C4;
+    --verde: #7FEB98;
+    --verde-100: #6AC67F;
+    --verde-200: #559E66;
+    --verde-300: #335E3D;
+    --gray:#f3f3f3;
+    --gray-100:#D9D9DE;
+    --gray-200:#C7C7CB;
+    --gray-300:#9B9B9E;
+    --gray-300: #5C5C5E;
+    --red-200: rgb(238, 122, 122);
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #49A1EB;
+}
+li{
+    list-style: none;
+}
+.flex{
+    display: flex;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-20{
+    gap: 20px;
+}
+body{
+    background-color: var(--gray);
+}
+.svg{
+    width: 20px;
+}
+.aling-center{
+    align-items: center;
+}
+footer{
+    background-color: #363636;
+    height: 100%;
+    font-weight: 300;
+    padding: 20px 25px 20px 25px;
+}
+.footer-wrapper{
+    display: flex;
+}
+.footer-wrapper > div{
+    width: 100%;
+}
+.footer_title{
+    color: rgba(255, 255, 255, 0.712);
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    font-weight: normal;
+    margin: 5px 0px;
+}
+.footer-wrapper > div > a{
+    color: #aaaaaa;
+    display: block;
+    margin: 5px 0px 5px 0px;
+}
+.footer_copyright{
+    margin: 10px;
+    text-align: center;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+}
+.main_contructure{
+    height: 100vh;
+}
+input, select, textarea{
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(197, 197, 197);
+}
+label{
+    display: block;
+    font-size: 14px;
+    font-weight: 300;
+    color: dimgrey;
+    margin: 8px 0px 8px
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.input-group > *{
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.max-content{
+    width: max-content;
+}
+.btn-save{
+    background-color: var(--verde-300);
+    padding: 9px 15px;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+}
+.btn-danger{
+    background-color: var(--red-200);
+    padding: 9px 15px;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+    border: none;
+}
+.main_container{
+    padding: 3% 2.5%;
+}

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./assets/img/SkillUp.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/layouts/app.css">
+    <link rel="stylesheet" href="./assets/css/empresa/estadisticas.css">
+    <title>Skill-Up</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="header_logo-img">
+                <a href="./index.html">
+                    <img src="./assets/img/SkillUp.png" alt="logotipo" width="30px">
+                </a>
+            </div>
+            <div class="header_logo-title">
+                <h2>Skill-Up</h2>
+                <small>Capacitate</small>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <ul class="flex gap-20 aling-center">
+                <li>
+                    <a href="./empresa_cursos_form.html" style="align-items: center; display: flex; gap: 5px">
+                        <span>Crear curso</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html" style="align-items: center; display: flex; gap: 5px">
+                        <span>Salir</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="SubMenu">
+        <ul class="flex gap-20">
+            <li>
+                <a href="./empresa_idx.html">Panel Principal</a>
+            </li>
+            <li>
+                <a href="./empresa_perfil.html">Perfil</a>
+            </li>
+            <li>
+                <a href="./empresa_empleados_list.html">Mis Empleados</a>
+            </li>
+            <li>
+                <a href="./empresa_instructor_list.html">Mis Instructores</a>
+            </li>
+            <li>
+                <a href="./empresa_cursos_list.html">Mis Cursos</a>
+            </li>
+            <li>
+                <a href="./empresa_estadisticas.html">Datos estadisticos</a>
+            </li>
+            <li>
+                <a href="./empresa_empleados_form.html">Dar de alta empleados</a>
+            </li>
+            <li>
+                <a href="./empresa_instructor_form.html">Dar de alta instructores</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main style="padding: 2% 3%;">
+        <div class="flex-col" style="gap: 50px; justify-content: center">
+            <div>   
+                <h1 style="margin-bottom: 8px">Estadisticas de Ofertas</h1>
+                <table class="table_ofertas" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <td colspan="2" style="border: none; background-color: #f3f3f3;">
+                                
+                            </td>
+                            <td colspan="3" style="text-align: center; border: 1px solid dimgrey;">
+                                Estatus del curso
+                            </td>
+                            <td colspan="1" style="border: none; background-color: #f3f3f3;">
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span>Cursos</span>
+                            </td>
+                            <td style="text-align: center">
+                                <span>Cupos otorgados</span>
+                            </td>
+                            <td style="text-align: center">
+                                <span>Cursando</span>
+                            </td>
+                            <td style="text-align: center">
+                                <span>Sin Iniciar</span>
+                            </td>
+                            <td style="text-align: center;">
+                                <span>Completados</span>
+                            </td>
+                            <td>
+                                <span>Fecha</span>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="text-align: left;">
+                                Habilidades de liderazgo
+                            </th>
+                            <th>
+                                25
+                            </th>
+                            <th>
+                                20
+                            </th>
+                            <th>
+                                2
+                            </th>
+                            <th>
+                                3
+                            </th>
+                            <th>
+                                25/08/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Capacitación tecnologica
+                            </th>
+                            <th>
+                                50
+                            </th>
+                            <th>
+                                50
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                28/08/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Servicio al cliente
+                            </th>
+                            <th>
+                                120
+                            </th>
+                            <th>
+                                75
+                            </th>
+                            <th>
+                                25
+                            </th>
+                            <th>
+                                20
+                            </th>
+                            <th>
+                                31/08/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Técnicas de venta
+                            </th>
+                            <th>
+                                25
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                25
+                            </th>
+                            <th>
+                                03/09/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Inteligencia Emocional
+                            </th>
+                            <th>
+                                120
+                            </th>
+                            <th>
+                                18
+                            </th>
+                            <th>
+                                2
+                            </th>
+                            <th>
+                                100
+                            </th>
+                            <th>
+                                06/09/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Negociación 
+                            </th>
+                            <th>
+                                60
+                            </th>
+                            <th>
+                                20
+                            </th>
+                            <th>
+                                1
+                            </th>
+                            <th>
+                                39
+                            </th>
+                            <th>
+                                09/09/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Liderazgo tranformador
+                            </th>
+                            <th>
+                                45
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                45
+                            </th>
+                            <th>
+                                12/09/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Trabajo en equipo
+                            </th>
+                            <th>
+                                120
+                            </th>
+                            <th>
+                                40
+                            </th>
+                            <th>
+                                0
+                            </th>
+                            <th>
+                                80
+                            </th>
+                            <th>
+                                15/09/2022
+                            </th>
+                        </tr>
+                        <tr>
+                            <th style="text-align: left;">
+                                Influir en los clientes
+                            </th>
+                            <th>
+                                56
+                            </th>
+                            <th>
+                                6
+                            </th>
+                            <th>
+                                1
+                            </th>
+                            <th>
+                                49
+                            </th>
+                            <th>
+                                18/09/2022
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <img src="./assets/img/Graficas.png" alt="" width="90%" style="margin: auto; display: block">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p class="footer_title">Empresas</p>
+                <a>Crea un curso</a>
+                <a>Iniciar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+            </div>
+            <div>
+                <p class="footer_title">Empleados</p>
+                <a href="">Cursos</a>
+                <a href="">Inisiar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Registro</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur consectetur elit.</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="" style="color: #A3BF3E">Ayuda</a>
+                <a href="">Lorem ipsum</a>
+            </div>
+        </div>
+        <div class="footer_copyright">Skill-Up © 2022. </d>
+    </footer>
+
+</body>
+
+</html>

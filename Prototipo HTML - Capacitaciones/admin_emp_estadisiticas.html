@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/ico" href="./assets/img/SkillUp.png" />
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/layouts/app.css">
+    <script src="./assets/js/chart.js"></script>
+    <title>Admin | Estadisticas Empresa</title>
+</head>
+<body>
+    <header>
+        <div class="header_logo">
+            <div class="header_logo-img">
+                <a href="./index.html">
+                    <img src="./assets/img/SkillUp.png" alt="logotipo" width="30px">
+                </a>
+            </div>
+            <div class="header_logo-title">
+                <h2>Skill-Up</h2>
+                <small>Capacitate</small>
+            </div>
+        </div>
+        <div class="header_buttons">
+            <ul class="flex gap-20 aling-center">
+                <li>
+                    <a href="./index.html" style="align-items: center; display: flex; gap: 5px">
+                        <span>Salir</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="svg">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <nav class="SubMenu">
+        <ul class="flex gap-20">
+            <li>
+                <a href="./admin_index.html">Panel Principal</a>
+            </li>
+            <li>
+                <a href="#">Empresas</a>
+            </li>
+            <li>
+                <a href="#">Instructores</a>
+            </li>
+            <li>
+                <a href="#">Empleados</a>
+            </li>
+            <li>
+                <a href="./admin_emp_estadisiticas.html">Empresas Datos estadisticos</a>
+            </li>
+            <li>
+                <a href="./admin_instructor_estadistica.html">Instructores Datos Estadisticos</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main_container">
+        <div class="flex-col">
+            <div class="flex-col gap-20">
+                <h1 style="color: #22235E">Estadistica</h1>
+                <div>
+                    <table class="table_default">
+                        <thead>
+                            <tr>
+                                <td>Empresas Registradas</td>
+                                <td>Empresas Validadas</td>
+                                <td>Empresas Sin Validar</td>
+                                <td>Empresas Activas</td>
+                                <td>Empresas Con Cursos Activos</td>
+                                <td>Empresas Con Cursos Finalizados</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <span>398</span>
+                                </th>
+                                <th>
+                                    <span>290</span>
+                                </th>
+                                <th>
+                                    <span>108</span>
+                                </th>
+                                <th>
+                                    <span>129</span>
+                                </th>
+                                <th>
+                                    <span>89</span>
+                                </th>
+                                <th>
+                                    <span>120</span>
+                                </th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <h1 style="color: #22235E;">Graficos</h1>
+                <div style="width: 100%;">
+                    <canvas id="empresa_grafica_admin" style="max-height: 450px;"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div>
+                <p class="footer_title">Empresas</p>
+                <a>Crea un curso</a>
+                <a>Iniciar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+            </div>
+            <div>
+                <p class="footer_title">Empleados</p>
+                <a href="">Cursos</a>
+                <a href="">Inisiar sesión</a>
+                <a href="">Preguntas frecuentes</a>
+                <a href="">Registro</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur elit.</a>
+                <a href="">Lorem ipsum dolor sit amet consectetur consectetur elit.</a>
+            </div>
+            <div>
+                <p class="footer_title">Lorem ipsum</p>
+                <a href="" style="color: #A3BF3E">Ayuda</a>
+                <a href="">Lorem ipsum</a>
+            </div>
+        </div>
+        <div class="footer_copyright">Skill-Up © 2022. </d>
+    </footer>
+    <script src="./assets/js/admin.js"></script>
+</body>
+</html>

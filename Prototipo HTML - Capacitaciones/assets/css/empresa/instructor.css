@@ -1,0 +1,39 @@
+.alta_instructor{
+    height: calc(100vh - 200px);
+    justify-content: center;
+}
+.alta_instructor_container{
+    width: 50%;
+    height: max-content;
+}
+.alta_instructor_container h1{
+    color: var(--azul-300);
+    text-align: center;;
+}
+.alta_instructor_container p{
+    color: var(--gray-300);
+    font-weight: 300;
+    text-align: center;
+}
+.hr{
+    width: 100%;
+    height: 1px !important;
+    background-color: var(--gray-300);
+    display: flex;
+}
+.table_listado{
+    width: 100%;
+}
+.table_listado thead tr td{
+    background-color: var(--gray-300);
+    color: white;
+    padding: 5px;
+}
+.table_listado tbody tr th{
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px;
+    font-weight: 300;
+}
+.Acciones button{
+    margin: 0px;
+}

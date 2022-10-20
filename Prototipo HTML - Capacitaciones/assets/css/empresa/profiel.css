@@ -1,0 +1,25 @@
+.avatar_input label{
+    cursor: pointer;
+    border-radius: 100%;
+}
+.avatar_input label img{
+    padding: 5px;
+    border-radius: 100%;
+}
+.avatar_input small{
+    color: var(--gray-300);
+}
+.avatar_input{
+    margin: 20px 10px 10px 10px;
+}
+.formulario_left h1,.formulario_right h1{
+    color: var(--azul-300);
+    text-align: center;
+}
+.formulario_container > div{
+    width: 50%;
+    padding: 20px 30px;
+}
+.formulario_container{
+    justify-content: center;
+}

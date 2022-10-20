@@ -1,0 +1,32 @@
+.formulario_left h1,.formulario_right h1{
+    color: var(--azul-300);
+    text-align: center;
+}
+.formulario_container > div{
+    width: 50%;
+    padding: 20px 30px;
+}
+.formulario_container{
+    justify-content: center;
+}
+.formulario_left small{
+    color: var(--gray-300);
+    letter-spacing: .5px;
+    text-align: center;
+}
+.table_listado{
+    width: 100%;
+}
+.table_listado thead tr td{
+    background-color: var(--gray-300);
+    color: white;
+    padding: 5px;
+}
+.table_listado tbody tr th{
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px;
+    font-weight: 300;
+}
+.Acciones button{
+    margin: 0px;
+}

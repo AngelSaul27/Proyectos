@@ -1,0 +1,60 @@
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+main > div{
+    width: 100%;
+}
+.main_left{
+    background-color: white;
+}
+.main_right{
+    background-color: var(--marino-300);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.main_right span{
+    text-align: center;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+}
+.form_container{
+    padding: 5%;
+}
+.steps{
+    color: var(--verde-300);
+    font-size: 18px;
+    font-weight: 500;
+}
+.form_contianer_title{
+    color: var(--azul-300);
+    margin-bottom: 10px;
+}
+.form_contianer_title small,
+.redirect_link{
+    color: var(--gray-300);
+}
+.btn-registro{
+    background-color: var(--verde-300);
+    padding: 9px 15px;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;;
+}
+.MainRegistro_Steps-input_foto label{
+    padding: 15px;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 3px;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;;
+}
+.MainRegistro_Steps-input_foto label svg{
+    width: 80px;
+    color: rgb(197, 197, 197);
+}

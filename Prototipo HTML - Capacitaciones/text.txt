@@ -1,0 +1,16 @@
+<?php
+                    if(!isset($_SESSION['role'])){
+                        echo 
+                        '<li>
+                            <a href="'.constant('URL').'login">Ingresar</a>
+                        </li>
+                        <li>
+                            <a href="'.constant('URL').'registro">Registrate</a>
+                        </li>';
+                    }else{
+                        echo
+                        '<li>
+                            <a href="'.constant('URL').'registro">Logout</a>
+                        </li>';
+                    }
+                ?>  
